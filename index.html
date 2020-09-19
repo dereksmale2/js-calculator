@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div class="dividers">
+                <input type="button" id="clear" value="C" onclick="clearAnswer()">
+                <input type="button" id="answer" value=" " onclick="">
+            </div>
+            <div class="dividers">
+                <input type="button" value="7" onclick="updateDisplay('7')">
+                <input type="button" value="8" onclick="updateDisplay('8')">
+                <input type="button" value="9" onclick="updateDisplay('9')">
+                <input type="button" class="operator" value="/" onclick="updateDisplay('/')">
+            </div>
+            <div class="dividers">
+                <input type="button" value="4" onclick="updateDisplay('4')">
+                <input type="button" value="5" onclick="updateDisplay('5')">
+                <input type="button" value="6" onclick="updateDisplay('6')">
+                <input type="button" class="operator" value="x" onclick="updateDisplay('*')">
+            </div>
+            <div class="dividers">
+                <input type="button" value="1" onclick="updateDisplay('1')">
+                <input type="button" value="2" onclick="updateDisplay('2')">
+                <input type="button" value="3" onclick="updateDisplay('3')">
+                <input type="button" class="operator" value="-" onclick="updateDisplay('-')">
+            </div>
+            <div class="dividers">
+                <input type="button" value="0" onclick="updateDisplay('0')">
+                <input type="button" id="equal" value="." onclick="updateDisplay('.')">
+                <input type="button" class="operator" value="=" onclick="displayTotal()">
+                <input type="button" class="operator" value="+" onclick="updateDisplay('+')">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

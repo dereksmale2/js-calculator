@@ -1,0 +1,63 @@
+body {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#container {
+    padding-top: 5em;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 28%;
+}
+
+.dividers {
+    display: flex;
+    background-color: #83d178;
+}
+
+input {
+    outline: none;
+    border-collapse: collapse;
+}
+
+input[type="button"] {
+    width: 80px;
+    color: black;
+    background-color: transparent;
+    font-size: 28px;
+    font-weight: 50;
+    margin: .5px;
+    padding: 1em;
+    border: none;
+}
+
+input[type="button"]:hover{
+    background: #83c178;
+}
+
+#clear:hover {
+    background-color: #83c178;
+}
+
+#answer {
+    width: 242px;
+    text-align: right;
+    border: 1px dashed #83c178;
+}
+
+#answer:hover{
+    background-color: transparent;
+}
+
+input[class="operator"] {
+    color: #83c178;
+    background-color: lightgray;
+}
+
+input[class="operator"]:hover {
+    color: black;
+    background-color: #83c178;
+}
